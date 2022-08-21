@@ -174,7 +174,7 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.ceil();
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
@@ -219,7 +219,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-return 'Hola' + nombre + "!"  
+return 'Hola ' + nombre + "!";  
 
 }
 
