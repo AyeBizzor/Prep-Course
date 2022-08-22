@@ -4,7 +4,11 @@ function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
-  // Tu código:  hfgd
+  // Tu código: alguna modif
+  if (x > y) {
+    return x;
+  } 
+    return y;
 }
 
 function mayoriaDeEdad(edad) {
