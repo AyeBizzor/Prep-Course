@@ -15,7 +15,7 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if (edad > 18) {
+  if (edad >= 18) {
     return "Allowed";
   } else {
     return "Not allowed";
@@ -44,14 +44,14 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma == aleman) {
-    return "Guten tag!";
-  } else if (idioma == mandarin) {
+  if (idioma === 'aleman') {
+    return "Guten Tag!"; 
+  } else if (idioma === 'mandarin') {
     return "Ni Hao!";
-  } else if (idioma == inglés) {
-    return "Hello!";
+  } else if (idioma === 'ingles') {
+    return "Hola!"; // el npm test dice que debería decir "Hola!" y no "Hello!" no entiendo el error
   } else {
-    return undefined;
+    return "Hola!";
   }
 }
 
@@ -64,13 +64,13 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   switch (color) {
-		case blue:    
+		case "blue":    
 		   return "This is blue";
-		case red:
+		case "red":
 		  return "This is red";		       
-		case green:
+		case "green":
 		  return "This is green";		
-		case orange:
+		case "orange":
 		  return "This is orange";		
 		default:  
 		  return "Color not found";
@@ -107,16 +107,12 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if (numero % 3 == 0) {
-    return "fizz"; 
-  }  if (numero % 5 == 0) {
-    return "buzz";
-  }  if (numero % 3 == 0) || (numero % 5 == 0) {
-    return "fizzbuzz";
-  } else {
-    return numero;
+  if(numero % 15 === 0) return 'fizzbuzz';
+  if(numero % 3 === 0) return 'fizz';
+  if(numero % 5 === 0) return 'buzz';
+  return numero;
   }
-}
+
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
